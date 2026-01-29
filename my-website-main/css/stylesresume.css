@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f0f4f8;
+  color: #2d3748;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.cv-header {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  padding: 40px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  opacity: 0.95;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  font-size: 0.9em;
+}
+
+.contact-bar span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-bar i {
+  font-size: 1.1em;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 0;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  padding: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar .card:last-child {
+  border-bottom: none;
+}
+
+.main-content .card:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #059669;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title i {
+  font-size: 1.2em;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #f7fafc;
+  border-right: 1px solid #e2e8f0;
+}
+
+.profile-card p {
+  font-size: 0.95em;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+/* Skills */
+.skill-item {
+  margin-bottom: 18px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #059669 0%, #10b981 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Certifications */
+.cert-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.cert-item:last-child {
+  margin-bottom: 0;
+}
+
+.cert-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  flex-shrink: 0;
+}
+
+.cert-details h4 {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 3px;
+}
+
+.cert-details p {
+  font-size: 0.85em;
+  color: #718096;
+}
+
+/* Competency Tags */
+.competency-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* Main Content */
+.main-content {
+  background: white;
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #059669;
+  border-radius: 50%;
+  border: 3px solid #d1fae5;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% + 10px);
+  background: #d1fae5;
+}
+
+.timeline-date {
+  display: inline-block;
+  background: #059669;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  font-size: 1em;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.timeline-content ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.timeline-content li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+.timeline-content li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: bold;
+}
+
+/* Experience Items */
+.experience-item {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 15px;
+}
+
+.exp-header h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2d3748;
+  flex: 1;
+}
+
+.exp-date {
+  background: #f7fafc;
+  color: #059669;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid #d1fae5;
+}
+
+.experience-item h4 {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 0.9em;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    border-right: none;
+    border-bottom: 3px solid #e2e8f0;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-bar {
+    justify-content: center;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 10px;
+  }
+  
+  .cv-header {
+    padding: 25px 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.5em;
+  }
+  
+  .contact-bar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .exp-header {
+    flex-direction: column;
+  }
+  
+  .exp-date {
+    align-self: flex-start;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+  
+  .container {
+    box-shadow: none;
+  }
+  
+  .content-grid {
+    grid-template-columns: 300px 1fr;
+  }
+  
+  .card {
+    page-break-inside: avoid;
+  }
+}

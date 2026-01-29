@@ -1,0 +1,92 @@
+body {
+    background-color: #111111;
+    color: #b0b0b0;
+    font-family: 'Public Sans', sans-serif;
+    padding: 60px 15%;
+    animation: slideUp 0.8s ease;
+}
+
+h2 { 
+    font-family: 'DM Serif Display', serif; 
+    color: white; 
+    font-size: 42px; 
+    margin-bottom: 60px; 
+}
+
+.job-row {
+    display: flex;
+    gap: 50px; 
+    padding-bottom: 50px;
+    border-left: 1px solid #333;
+    padding-left: 40px;
+    position: relative;
+}
+
+.job-row::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    background: #ccf381;
+    border-radius: 50%;
+}
+
+.date {
+    min-width: 220px; 
+    flex-shrink: 0;
+    color: #ccf381;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 8px; 
+}
+
+.details { 
+    width: 100%; 
+}
+
+.details h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    color: white;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.details h4 {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    color: #777;
+    font-size: 16px;
+}
+
+.details ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.details li {
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.details li::before {
+    content: "•";
+    color: #ccf381;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+@keyframes slideUp { 
+    from { transform: translateY(20px); opacity: 0; } 
+    to { transform: translateY(0); opacity: 1; } 
+}

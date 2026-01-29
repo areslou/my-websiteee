@@ -1,0 +1,176 @@
+body {
+    background-color: #111111;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    padding: 60px 20%;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+h2 { 
+    font-family: 'DM Serif Display', serif; 
+    font-size: 50px; 
+    margin-bottom: 10px; 
+}
+
+p.sub { 
+    color: #888; 
+    margin-bottom: 40px; 
+}
+
+.contact-info { 
+    margin-bottom: 20px; 
+    font-size: 14px; 
+    color: #ccf381; 
+    letter-spacing: 1px;
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a {
+    color: #888;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    color: #111;
+    background-color: #ccf381;
+    border-color: #ccf381;
+    transform: translateY(-5px);
+}
+
+/* FORM STYLING */
+form { 
+    text-align: left; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    margin-bottom: 80px;
+}
+
+.input-group { 
+    margin-bottom: 40px; 
+    position: relative; 
+}
+
+label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ccf381;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    font-family: 'DM Serif Display', serif;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+button {
+    background: #ccf381;
+    color: #000;
+    border: none;
+    padding: 20px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover { 
+    background: white; 
+}
+
+/* REFERENCES SECTION */
+.ref-section {
+    text-align: left;
+    border-top: 1px solid #333;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.ref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.ref-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.ref-card h4 {
+    font-size: 14px;
+    color: #ccf381;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ref-card p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* FOOTER REFERENCE LINK */
+.credits {
+    margin-top: 100px;
+    font-size: 12px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.credits a {
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: color 0.3s, border-color 0.3s;
+    padding-bottom: 2px;
+}
+
+.credits a:hover {
+    color: #ccf381;
+    border-bottom-color: #ccf381;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: scale(0.98); } 
+    to { opacity: 1; transform: scale(1); } 
+}
